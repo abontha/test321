@@ -1,0 +1,447 @@
+/* Global Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1E1E1E;
+    color: #ECECEC;
+    line-height: 1.6;
+    scroll-behavior: smooth; /* Added smooth scrolling */
+}
+
+/* Header */
+.header {
+    background-color: #232323;
+    color: #ECECEC;
+    padding: 15px 20px;
+    text-align: left;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.site-title {
+    font-size: 26px;
+    font-weight: 500;
+    color: #ECECEC;
+}
+
+.openbtn {
+    background-color: #2A2A2A;
+    color: #ECECEC;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s, transform 0.2s; /* Added hover scale effect */
+    border-radius: 5px; /* Added border-radius for a modern look */
+}
+
+.openbtn:hover {
+    background-color: #3A3A3A;
+    transform: scale(1.05); /* Added scale effect on hover */
+}
+
+/* Sidebar */
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 20;
+    top: 0;
+    left: 0;
+    background-color: #2B2B2B;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.5);
+}
+
+.sidebar a {
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #ECECEC;
+    display: block;
+    transition: color 0.3s, background-color 0.3s;
+    border-radius: 5px; /* Added rounded corners */
+}
+
+.sidebar a:hover {
+    background-color: #00BFFF; /* Added hover background to match link hover */
+    color: #fff;
+}
+
+.sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+}
+
+/* Main Content */
+.main-content {
+    padding: 30px 20px;
+    margin-top: 80px;
+}
+
+/* Dashboard Content */
+.dashboard-box {
+    background-color: #2A2A2A;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.dashboard-box:hover {
+    transform: translateY(-5px); /* Slight hover effect */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.dashboard-box h2 {
+    font-size: 1.8rem;
+    color: #00BFFF;
+    margin-bottom: 10px;
+}
+
+.dashboard-box p {
+    font-size: 1.1rem;
+    color: #ECECEC;
+}
+
+/* Ticker Widget */
+.tradingview-widget-container {
+    margin-bottom: 20px;
+}
+
+.widget-container {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+/* Stock Input Styling */
+#stock-symbol {
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+#load-stock {
+    background-color: #007BFF;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#load-stock:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px); /* Subtle hover animation */
+}
+
+/* Hero Section */
+.hero {
+    background-color: #232323;
+    color: #ECECEC;
+    text-align: center;
+    padding: 120px 20px;
+    background-image: linear-gradient(to right, #2A2A2A, #1E1E1E);
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    letter-spacing: 1px; /* Added letter-spacing for a cleaner look */
+}
+
+.hero p {
+    font-size: 22px;
+    margin-bottom: 30px;
+}
+
+.btn-orange {
+    background-color: #007BFF;
+    color: white;
+    padding: 12px 24px;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 5px;
+}
+
+.btn-orange:hover {
+    background-color: #0056b3;
+}
+
+/* Services Section */
+.services {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #1F1F1F;
+}
+
+.service-box {
+    display: inline-block;
+    width: 28%;
+    margin: 20px;
+    padding: 30px;
+    background-color: #2A2A2A;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.4);
+}
+
+.service-box h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #00BFFF;
+}
+
+/* Features Section */
+.features {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #282828;
+}
+
+.feature-box {
+    display: inline-block;
+    width: 28%;
+    margin: 20px;
+    padding: 30px;
+    background-color: #2A2A2A;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.4);
+}
+
+.feature-box h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #00BFFF;
+}
+
+/* Testimonials Section */
+.testimonials {
+    background-color: #1F1F1F;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.testimonial {
+    display: inline-block;
+    width: 28%;
+    margin: 20px;
+    padding: 30px;
+    background-color: #2A2A2A;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+    color: #ECECEC;
+}
+
+/* FAQ Section */
+.faq {
+    background-color: #282828;
+    padding: 60px 20px;
+    color: #ECECEC;
+}
+
+.faq-item {
+    margin-bottom: 20px;
+}
+
+.faq-item h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #00BFFF;
+}
+
+/* Call-to-Action Section */
+.cta {
+    background-color: #232323;
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+    background-image: linear-gradient(to right, #2A2A2A, #1E1E1E);
+}
+
+.cta h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    letter-spacing: 0.5px; /* Added for consistency */
+}
+
+/* Footer */
+footer {
+    background-color: #1E1E1E;
+    color: white;
+    text-align: center;
+    padding: 30px 0;
+    margin-top: 40px;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    color: #00BFFF;
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+/* Widgets Container */
+.widget-container {
+    width: 100%;
+    height: 700px;
+    margin-bottom: 20px;
+    background-color: #1A2A4E;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+}
+
+/* Technical Analysis Widget */
+.tech-analysis-widget {
+    margin-bottom: 30px;
+}
+
+/* Animations */
+.fade-in {
+    animation: fadeIn 1s ease-in forwards;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Miscellaneous */
+.learn-container {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #282828;
+    color: #ECECEC;
+}
+
+.learn-box {
+    display: inline-block;
+    width: 30%;
+    margin: 20px;
+    padding: 30px;
+    background-color: #2A2A2A;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.learn-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.4);
+}
+
+.learn-box h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #00BFFF;
+}
+
+.learn-box a {
+    text-decoration: none;
+    color: #00BFFF;
+    font-weight: bold;
+}
+
+.learn-box a:hover {
+    text-decoration: underline;
+}
+
+/* Added smoother hover animations */
+a {
+    transition: color 0.3s ease;
+}
+
+/* Ticker Widget */
+.tradingview-widget-container {
+    background-color: #1F1F1F;
+    padding-top: 15px; /* Adds padding within the ticker container */
+}
+
+/* Ticker Container Adjustment */
+.ticker-container {
+    margin-top: 60px; /* Increase this value to create enough space below the ticker */
+}
+
+/* InvestIQ Heading */
+.investiq-heading {
+    font-size: 64px; /* Larger than the main title */
+    font-weight: bold;
+    color: #007BFF; /* Blue color */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Hero Title */
+.hero-title {
+    font-size: 48px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-top: 20px; /* Adjust as needed */
+}
+
+/* Adjusted Hero Section */
+.hero-light {
+    background-color: #2A2A2A;
+    background-image: linear-gradient(to right, #3A3A3A, #1E1E1E);
+    color: #FFFFFF;
+}
+
+.hero-light h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    color: #00BFFF;
+}
+
+.hero-light p {
+    font-size: 22px;
+    margin-bottom: 30px;
+    color: #00BFFF;
+}
+
+/* Adjusted CTA Section */
+.cta-light {
+    background-color: #2A2A2A;
+    background-image: linear-gradient(to right, #3A3A3A, #1E1E1E);
+    color: #FFFFFF;
+}

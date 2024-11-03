@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InvestIQ - Home</title>
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+<body>
+    <header class="header">
+        <span class="site-title">InvestIQ</span>
+        <button class="openbtn" onclick="openNav()">☰ Menu</button>
+    </header>
+
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <a href="/">Home</a>
+        <a href="/dashboard">Dashboard</a>
+        <a href="/learn">Learn</a>
+    </div>
+
+    <!-- Ticker Widget -->
+    <div class="tradingview-widget-container ticker-container">
+        <div class="tradingview-widget-container__widget"></div>
+        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
+        {
+            "symbols": [
+                {"proName": "FOREXCOM:SPXUSD", "title": "S&P 500"},
+                {"proName": "FOREXCOM:NSXUSD", "title": "Nasdaq 100"},
+                {"proName": "BITSTAMP:BTCUSD", "title": "Bitcoin"},
+                {"proName": "BITSTAMP:ETHUSD", "title": "Ethereum"}
+            ],
+            "showSymbolLogo": true,
+            "colorTheme": "dark",
+            "isTransparent": false,
+            "displayMode": "adaptive"
+        }
+        </script>
+    </div>
+
+    <!-- InvestIQ Heading -->
+    <h1 class="investiq-heading">InvestIQ</h1>
+
+    <!-- Hero Section -->
+    <div class="hero hero-light">
+        <h1 class="hero-title">Your Future, Your Investment</h1>
+        <p>Empowering young adults to take control of their financial future.</p>
+        <a href="/dashboard" class="btn-orange">Get Started</a>
+    </div>
+
+    <!-- Services Section -->
+    <section class="services fade-in">
+        <div class="service-box">
+            <h3>Advanced Stock Analysis</h3>
+            <p>Leverage cutting-edge tools to analyze and monitor stock performance in real-time.</p>
+        </div>
+        <div class="service-box">
+            <h3>Educational Resources</h3>
+            <p>Access comprehensive resources to build a strong foundation in investing.</p>
+        </div>
+        <div class="service-box">
+            <h3>Expert Insights</h3>
+            <p>Get expert recommendations and stay ahead of market trends with our tailored advice.</p>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features fade-in">
+        <div class="feature-box">
+            <h3>Why Choose Us?</h3>
+            <p>InvestIQ is designed to guide beginners through the complexities of the stock market, providing all the tools you need to make informed investment decisions.</p>
+        </div>
+        <div class="feature-box">
+            <h3>Innovative Tools</h3>
+            <p>Our platform offers a suite of innovative tools to help you analyze market data, understand trends, and make informed decisions.</p>
+        </div>
+        <div class="feature-box">
+            <h3>Comprehensive Support</h3>
+            <p>Whether you're just starting out or looking to enhance your skills, InvestIQ provides the support you need every step of the way.</p>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials fade-in">
+        <h2>What Our Users Say</h2>
+        <div class="testimonial">
+            <p>"InvestIQ has transformed the way I approach investing. The tools and resources are unmatched."</p>
+            <p>- Sarah J., 22</p>
+        </div>
+        <div class="testimonial">
+            <p>"I feel more confident in my investment decisions thanks to the insights provided by InvestIQ."</p>
+            <p>- Mike L., 25</p>
+        </div>
+        <div class="testimonial">
+            <p>"A must-have for anyone serious about understanding the stock market."</p>
+            <p>- Emily R., 21</p>
+        </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section class="cta cta-light fade-in">
+        <h2>Ready to Start Investing?</h2>
+        <a href="/dashboard" class="btn-orange">Visit the Dashboard</a>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-links">
+            <a href="/">Home</a>
+            <a href="/dashboard">Dashboard</a>
+            <a href="/learn">Learn</a>
+        </div>
+        <p>&copy; 2024 InvestIQ. All rights reserved.</p>
+    </footer>
+
+    <script src="static/js/script.js"></script>
+</body>
+</html>

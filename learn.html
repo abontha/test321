@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InvestIQ - Learn</title>
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+<body>
+    <header class="header">
+        <span class="site-title">InvestIQ</span>
+        <button class="openbtn" onclick="openNav()">☰ Menu</button>
+    </header>
+
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <a href="/">Home</a>
+        <a href="/dashboard">Dashboard</a>
+        <a href="/learn">Learn</a>
+    </div>
+
+    <!-- Ticker Widget -->
+    <div class="tradingview-widget-container">
+        <div class="tradingview-widget-container__widget"></div>
+        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
+        {
+            "symbols": [
+                {"proName": "FOREXCOM:SPXUSD", "title": "S&P 500"},
+                {"proName": "FOREXCOM:NSXUSD", "title": "Nasdaq 100"},
+                {"proName": "BITSTAMP:BTCUSD", "title": "Bitcoin"},
+                {"proName": "BITSTAMP:ETHUSD", "title": "Ethereum"}
+            ],
+            "showSymbolLogo": true,
+            "colorTheme": "dark",
+            "isTransparent": false,
+            "displayMode": "adaptive"
+        }
+        </script>
+    </div>
+
+    <div class="main-content fade-in learn-container">
+        <h1>Learn About Stocks</h1>
+        <p>Understanding the basics of investing is crucial to your success. Here are some resources to get you started.</p>
+
+        <div class="learn-box">
+            <h2>What is a Stock?</h2>
+            <p>A stock represents a share in the ownership of a company. Stocks give you a claim on the company’s assets and earnings.</p>
+        </div>
+
+        <div class="learn-box">
+            <h2>How to Invest</h2>
+            <p>Investing involves purchasing stocks and other securities with the expectation of earning a return. The goal is to buy low and sell high.</p>
+        </div>
+
+        <div class="learn-box">
+            <h2>Risk Management</h2>
+            <p>It's important to understand the risks involved in investing and how to mitigate them. Diversification and research are key strategies.</p>
+        </div>
+
+        <!-- Interactive Quiz Section -->
+        <div class="quiz">
+            <h2>Test Your Knowledge</h2>
+            <p>Take our quiz to see how much you've learned about investing and stocks!</p>
+            <button class="btn-orange">Start Quiz</button>
+        </div>
+
+        <!-- Additional Resources Section -->
+        <div class="additional-resources fade-in">
+            <h2>Additional Resources</h2>
+            <p>Check out these articles and books to further your understanding of the stock market.</p>
+            <div class="resource-link">
+                <a href="#">Investing for Beginners</a>
+            </div>
+            <div class="resource-link">
+                <a href="#">The Intelligent Investor</a>
+            </div>
+            <div class="resource-link">
+                <a href="#">Market Analysis Techniques</a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-links">
+            <a href="/">Home</a>
+            <a href="/dashboard">Dashboard</a>
+            <a href="/learn">Learn</a>
+        </div>
+        <p>&copy; 2024 InvestIQ. All rights reserved.</p>
+    </footer>
+
+    <script src="static/js/script.js"></script>
+</body>
+</html>
